@@ -13,10 +13,18 @@ source setup.sh
 Ejecute los siguientes comandos en el terminal:
 
 ```bash
-python3 -m venv .venv
+py -m venv .venv
 .venv\Scripts\activate
 setup
 ```
+
+# Configuración en Windows
+
+```powershell
+py -m venv .venv
+Set-ExecutionPolicy -Scope Process -ExecutionPolicy Bypass
+.venv\Scripts\activate
+.\setup.bat
 
 # Ejecución de pruebas
 
